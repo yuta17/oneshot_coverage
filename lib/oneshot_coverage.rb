@@ -2,6 +2,7 @@ require "coverage"
 require "digest/md5"
 
 require "oneshot_coverage/logger/null_logger"
+require "oneshot_coverage/logger/file_logger"
 require "oneshot_coverage/railtie" if defined?(Rails)
 
 module OneshotCoverage
