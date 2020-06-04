@@ -9,6 +9,7 @@ module OneshotCoverage
 
       def post(new_logs)
         current_coverage = fetch
+        return if current_coverage.nil?
 
         new_logs.each do |new_log|
           key = "#{new_log.path}-#{new_log.md5_hash}"
